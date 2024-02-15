@@ -37,18 +37,18 @@ var orders = [
     { orderId: 104, customerId: 4, product: "Earphone", quantity: 3, price: 200 },
 ];
 //! numbers of price higher than 1000$
-var orderCount = orders.filter(function (count) { return count.price >= 1000; });
-console.log(orderCount);
+// const orderCount:Order[] = orders.filter((count)=>count.price>=1000)
+// console.log(orderCount);
 //! find by customer name
-// const customerFind:Customer[] = customers.filter((customer)=>customer.name.toLowerCase()==="alice")
+// const customerFind:Customer[] = customers.filter((customer:Customer)=>customer.name.toLowerCase()==="alice")
 // console.log(customerFind);
 //! find index in orders
-// const  orderFind:number = orders.findIndex((order)=>order.orderId===102)
+// const  orderFind:number = orders.findIndex((order:Order)=>order.orderId===102)
 // console.log(orderFind);
 //! find order
-// const customerFind:Customer[] = customers.filter((customer)=>{
+// const customerFind:Customer[] = customers.filter((customer:Customer)=>{
 //     if(customer.location.country === 'USA'){
-//        orders.filter((order) => {
+//        orders.filter((order:Order) => {
 //           if (order.customerId === customer.id) {
 //         console.log(order)
 //           }
@@ -56,8 +56,8 @@ console.log(orderCount);
 //     }
 // });
 //! enter the customer name and the corresponding text using foreach
-// customers.forEach((customer) =>
-//   orders.forEach((order) => {
+// customers.forEach((customer:Customer) =>
+//   orders.forEach((order:Order) => {
 //     if ((customer.id === order.customerId)) {
 //       console.log(
 //         `Order ${order.orderId} by ${customer.name}: ${order.quantity} x ${order.product} for ${order.price} each`
@@ -66,8 +66,8 @@ console.log(orderCount);
 //   }
 // ));  
 //! sort by name
-//
-// const sortedCustomers:Customer[] = customers.sort( (a,b)=>{
+// 
+// const sortedCustomers:Customer[] = customers.sort( (a:Customer,b:Customer)=>{
 //     if(a.name>b.name){
 //         return 1
 //     }else if(a.name<b.name){
