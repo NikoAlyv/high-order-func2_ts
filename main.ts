@@ -59,7 +59,7 @@ const customers: Customer[] = [
   ];
   
   //! numbers of price higher than 1000$
-    // const orderCount:Order[] = orders.filter((count)=>count.price>=1000)
+    // const orderCount:Order[] = orders.filter((count:Order)=>count.price>=1000)
     // console.log(orderCount);
   
   //! find by customer name
